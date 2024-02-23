@@ -1,0 +1,30 @@
+//Create Table Order
+
+CREATE TABLE Orders (   
+    OrderID INT PRIMARY KEY,   
+    CustomerID INT,   
+    OrderDate DATE,   
+    ProductName VARCHAR(100),   
+    Quantity INT,   
+    TotalAmount DECIMAL(10, 2),   
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)   
+);
+
+INSERT INTO Orders VALUES (101, 1, TO_DATE('2024-01-12','YYYY-MM-DD'), 'Hp', 2, 100000.00);
+
+INSERT INTO Orders VALUES (102, 2, TO_DATE('2024-01-15','YYYY-MM-DD'), 'Lenevo', 5, 2000.00);
+
+INSERT INTO Orders VALUES (103, 3, TO_DATE('2024-01-16','YYYY-MM-DD'), 'Asus', 3, 80000.00);
+
+INSERT INTO Orders VALUES (104, 4, TO_DATE('2024-01-26','YYYY-MM-DD'), 'Vivo', 4, 12000.00);
+
+INSERT INTO Orders VALUES (105, 5, TO_DATE('2024-01-25','YYYY-MM-DD'), 'Acer', 6, 50000.00);
+
+INSERT INTO Orders VALUES (106, 1, TO_DATE('2024-01-16','YYYY-MM-DD'), 'Dell', 2, 30000.00);
+
+INSERT INTO Orders VALUES (107, 2, TO_DATE('2024-01-15','YYYY-MM-DD'), 'Hp chromebook', 2, 200000.00);
+
+Select*from Customers;
+
+Select*from Customers;
+

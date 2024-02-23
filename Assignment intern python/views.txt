@@ -1,0 +1,17 @@
+/Create View
+
+CREATE VIEW CustomersView AS 
+SELECT FirstNAME, Email 
+FROM Customers 
+WHERE CustomerID < 5;
+
+//Call View
+
+SELECT * FROM CustomersView;
+
+//Drop View
+
+DROP VIEW view_name;
+
+SELECT * FROM CustomersView;
+
